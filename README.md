@@ -10,8 +10,8 @@ Built with vanilla TypeScript, HTML5 Canvas 2D and Vite. There is no backend, ac
 
 - **Desktop:** move the mouse. The cell steers toward the pointer and slows to a stop when the pointer is on top of it.
 - **Mobile / tablet:** touch and drag with one finger. Lift the finger to stop.
-- Eat pellets to gain mass. Eat a cell that is at least 20% larger in radius than the cell you are eating (and mostly overlap it) to take 85% of its mass.
-- If a cell 20% bigger than you overlaps you, it eats you. The game-over card shows your stats and a **Restart** button (or press Enter / Space).
+- Eat pellets to gain mass. Eat a cell that is at least 10% larger in radius than the cell you are eating (and mostly overlap it) to take 85% of its mass.
+- If a cell 10% bigger than you overlaps you, it eats you. The game-over card shows your stats and a **Restart** button (or press Enter / Space).
 - Bigger cells are slower, and the camera zooms out as you grow. Your best score is saved in `localStorage`.
 
 ## Requirements
@@ -88,7 +88,7 @@ e2e/e2e.mjs             Browser end-to-end test
 
 ## Tuning
 
-Everything is in [`src/game/GameConfig.ts`](src/game/GameConfig.ts): arena size (5000 × 5000), pellet count (1200), opponent tiers (8 small / 8 medium / 4 large), size advantage (1.2), mass transfer (85%), AI danger/hunt/food radii and decision interval (~6 per second), zoom settings (min 0.45), maximum frame delta, and the `localStorage` key.
+Everything is in [`src/game/GameConfig.ts`](src/game/GameConfig.ts): arena size (5000 × 5000), pellet count (1200), opponent tiers (8 small / 8 medium / 4 large), size advantage (1.1), mass transfer (85%), AI danger/hunt/food radii and decision interval (~6 per second), zoom settings (min 0.45), maximum frame delta, and the `localStorage` key.
 
 ## Design notes
 

@@ -103,7 +103,7 @@ export const DEFAULT_CONFIG = {
 
   combat: {
     /** attacker.radius >= target.radius * sizeAdvantage is required to consume. */
-    sizeAdvantage: 1.2,
+    sizeAdvantage: 1.1,
     /**
      * The attacker must cover this fraction of the target: centre distance must be
      * less than attacker.radius - target.radius * overlapFraction. Edge contact is not enough.
