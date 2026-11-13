@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="description" content="Dot Survival - eat, grow, and survive in a colorful arena." />
+    <meta name="theme-color" content="#0f1420" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Dot Survival</title>
+  </head>
+  <body>
+    <canvas id="game" aria-label="Dot Survival game canvas"></canvas>
+
+    <div id="hud" class="panel" aria-live="off">
+      <div class="hud-row"><span class="hud-label">Mass</span><span id="hud-mass">10</span></div>
+      <div class="hud-row"><span class="hud-label">Eaten</span><span id="hud-eaten">0</span></div>
+      <div class="hud-row"><span class="hud-label">Best</span><span id="hud-best">0</span></div>
+      <div class="hud-row"><span class="hud-label">Time</span><span id="hud-time">0:00</span></div>
+    </div>
+
+    <div id="leaderboard" class="panel">
+      <div class="lb-title">Top 5</div>
+      <ol id="lb-list"></ol>
+    </div>
+
+    <div id="hint" class="hint">Move your mouse or drag a finger to steer. Eat dots, avoid bigger cells.</div>
+
+    <div id="gameover" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="go-title">
+      <div class="dialog">
+        <h1 id="go-title">GAME OVER</h1>
+        <dl>
+          <div><dt>Final mass</dt><dd id="go-mass">0</dd></div>
+          <div><dt>Opponents eaten</dt><dd id="go-eaten">0</dd></div>
+          <div><dt>Best score</dt><dd id="go-best">0</dd></div>
+        </dl>
+        <button id="go-restart" type="button">Restart</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+.bob/
+test-results/
+e2e/screenshots/
